@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './stylesTailwind.css';
+import { Header } from './components/Header';
+import  Picture  from './components/Picture';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main bg-white mx-64 w-2/3 mt-20 rounded">
+      <Header />
+      <form className="rounded px-8 pt-6 pb-8 mb-4 grid grid-cols-2 gap-10">
+        <Picture 
+            title={'Imagen Cuadrada'}  />
+
+        <Picture 
+            title={'Imagen Circular'} 
+            clase={'rounded-full'} />
+
+      </form> 
+    </main>
   );
 }
 
