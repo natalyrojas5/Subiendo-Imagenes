@@ -1,0 +1,4 @@
+main, img{
+    box-shadow: 0 0 6px .5rem #f6ad55;
+    transition: box-shadow .4s;
+}
